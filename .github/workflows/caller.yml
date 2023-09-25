@@ -1,0 +1,18 @@
+name: call
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call:
+    uses: ./.github/workflows/workflow.yml
+  call-false:
+    uses: ./.github/workflows/workflow.yml
+    with:
+      f: false
+  call-true:
+    uses: ./.github/workflows/workflow.yml
+    with:
+      f: true
