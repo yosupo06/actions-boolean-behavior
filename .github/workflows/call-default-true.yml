@@ -40,6 +40,6 @@ jobs:
 
   run-if-str-false:
     runs-on: ubuntu-latest
-    if: ${{ !github.event.inputs.f == 'false' }}
+    if: ${{ github.event.inputs.f == 'false' }}
     steps:
       - run: echo run-if-str-false
