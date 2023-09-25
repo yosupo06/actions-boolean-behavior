@@ -18,6 +18,11 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
+      - run: echo ${{ inputs.f }}
+
+  echo-github-input:
+    runs-on: ubuntu-latest
+    steps:
       - run: echo ${{ github.event.inputs.f }}
 
   run-if-true:
