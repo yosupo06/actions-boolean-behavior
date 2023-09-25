@@ -19,14 +19,6 @@ jobs:
     with:
       f: false
   call-true-default-true:
-    uses: ./.github/workflows/call-default-true.yml
+    uses: yosupo06/actions-boolean-behavior/.github/workflows/call-default-true.yml
     with:
       f: true
-  call-str-false-default-false:
-    uses: ./.github/workflows/call-default-false.yml
-    with:
-      f: 'false'
-  call-str-true-default-false:
-    uses: ./.github/workflows/call-default-false.yml
-    with:
-      f: 'true'
