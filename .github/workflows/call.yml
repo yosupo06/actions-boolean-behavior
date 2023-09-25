@@ -1,10 +1,9 @@
-name: Diff only generate test
+name: call
 
 on:
   push:
     branches:
-      - master
-  pull_request:
+      - main
 
 jobs:
   call-false-default-false:

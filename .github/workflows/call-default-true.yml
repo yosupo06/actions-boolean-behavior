@@ -1,4 +1,4 @@
-name: Generate test
+name: Call default true
 
 on:
   workflow_call:
