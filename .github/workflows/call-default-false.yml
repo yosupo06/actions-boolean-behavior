@@ -7,6 +7,12 @@ on:
         required: false
         default: false
         type: boolean
+  workflow_dispatch:
+    inputs:
+      f:
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   echo:
